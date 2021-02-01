@@ -4,20 +4,11 @@
       <a href="#">Alle Sessions</a> |
       <a href="#">Starte Event</a>
     </nav>
-    <question-form></question-form>
-    <add-new-session-page></add-new-session-page>
-    <sessions-page></sessions-page>
-    <router-view />
   </div>
 </template>
 
 <script>
-import AddNewSessionPage from "./components/pages/AddNewSessionPage.vue";
-import SessionsPage from "./components/pages/SessionsPage.vue";
-import QuestionForm from "./components/QuestionForm.vue";
-
 export default {
-  components: { QuestionForm, AddNewSessionPage, SessionsPage },
   name: "app",
 };
 </script>
