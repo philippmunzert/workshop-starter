@@ -1,6 +1,6 @@
 <template>
   <div class="center mt-8">
-    <QuestionForm @addQuestion="addQuestion" />
+    <QuestionForm />
     <template v-if="loading > 0">
       <div>
         <div>Loading...</div>
@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import QuestionCard from "@/components/QuestionCard";
-import QuestionForm from "@/components/QuestionForm";
+import QuestionCard from "./../components/QuestionCard.vue";
+import QuestionForm from "./../components/QuestionForm.vue";
 
 export default {
   name: "PageQuestion",

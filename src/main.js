@@ -8,6 +8,6 @@ import './index.css'
 // createApp(App).use(router).mount("#app");
 
 // use store and router
-createApp(App).use(router).use(store).mount("#app");
+// createApp(App).use(router).use(store).mount("#app");
 
-// createApp(App).mount("#app");
+createApp(App).mount("#app");

@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import SessionCard from "../SessionCard.vue";
+import SessionCard from "./../components/SessionCard.vue";
 
 export default {
   name: "PageSessions",
