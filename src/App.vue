@@ -1,9 +1,10 @@
 <template>
   <div id="app" class="border-green-500 border-t-8">
     <nav>
-      <a href="#">Alle Sessions</a> |
-      <a href="#">Starte Event</a>
+      <router-link to="/">Alle Sessions</router-link> |
+      <router-link to="/new-event">Starte Event</router-link>
     </nav>
+    <router-view></router-view>
   </div>
 </template>
 
