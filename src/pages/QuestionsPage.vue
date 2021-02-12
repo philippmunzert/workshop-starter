@@ -1,6 +1,6 @@
 <template>
   <div class="center mt-8">
-    <QuestionForm />
+    <QuestionForm @addQuestion="addNewQuestion" />
     <template v-if="loading > 0">
       <div>
         <div>Loading...</div>
@@ -39,6 +39,17 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    addNewQuestion(question) {
+      const newQuestion = {
+        text: question.text,
+        author: question.name,
+        id: this.questionsByEvent.length + 1,
+        isAnswered: false,
+      };
+      this.questionsByEvent.push(newQuestion);
+    },
   },
 };
 </script>
